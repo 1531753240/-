@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <!--action是将表单提交给服务器-->
+    <!--form action="服务器地址"与超链接相似-->
+    <form action="http://www.baidu.com">
+        <!--画按钮可以使用input输入域，type="submit"的时候表示该按钮是一个提交按钮，具有提交表单的能力-->
+        <!--input type="text"为文本框，input type="password"为密码框，input type="checkbox"为复选框，
+            radio为单选按钮-->
+            <!--对于按钮来说value属性用来指定按钮显示的文本信息，若为空，默认为提交两字-->
+        <input type="submit" value="百度"/>
+
+        <!--这是一个普通按钮不具备提交表单的能力-->
+        <input type="button" value="value是设置按钮上显示文本"/>
+    </form>
+    <!--表单提交给服务器的格式
+         http://localhost:8080/jd/login?username=abc&userpwd=111
+         格式：action?name=value&name=value&name=value&name=value&name=value.... 
+         HTTP协议规定：？前面是路径？后面是数据，数据以name和value键值对方式，以等号连接，对于对之间用&连接
+        -->
+    <form action="http://localhost:8080/jd/login">
+        <table>
+            <tr>
+                <td>用户名</td>
+                <td><input type="text" name="username"/></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type="text" name="userpwd"></td>
+            </tr>
+            <!--align="center"为居中-->
+            <tr align="center">
+                <!--input type="reset"为清空-->
+                <td colspan="2">
+                <!--要在form中才起作用-->
+                    <input type="submit" value="登录">
+                    <input type="reset" value="清空">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>

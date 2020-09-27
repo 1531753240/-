@@ -1,18 +1,14 @@
 <html>
     <head>
-        <style>
-        #border{
-            background-color: rgb(154, 255, 2);
-        }
-        </style>
+       <link href="inder4.css"type="text/css"rel="stylesheet"/>
     </head>
-    <body>
+    <body background="D:\web99\-\第六次课\banner.jpg">
         <p id="name">
             江西软件职业技术大学
         </p>
         <input type="button" id="btn"value="提交">
         <ul>
-            <li>华为</li>
+            <li type="square">华为</li>
             <li>小米</li>
             <li>格力</li>
             <li>苹果</li>
@@ -26,6 +22,7 @@
             <li></li>
             <li></li>
         </ul>
+        <!--ol为有序列表，前面带序号-->
         <ol>
             <li>华为</li>
             <li>小米</li>
@@ -35,7 +32,7 @@
         </ol>
         <img src="ahead.png" width="400" hight="300" alt="ahead" >
         <a href="https://www.jxuspt.com/">江西软件职业技术大学</a>      
-        <table border="6"  >
+        <table border="6"  width="30%">
             <p id="name"></p>
             <form  id="form1" method="POST" action="www.baidu.com">
                 <p>名字：<input name="name"type="text"></p>
@@ -46,8 +43,11 @@
 
                 </p>
             </form>
-
-            <tr>
+            
+            <tr><th colspan="2">表格</th></tr>
+            <!--合并单元格rowspan行，colspan列   
+                语句如：<td rowspan="合并个数">格子名称</td>-->
+            <tr> 
                 <td>第一行，第一列</td>
                 <td>第二行，第二列</td>
             </tr>
