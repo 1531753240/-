@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+    <!--JSs是一门时间驱动类型的编程语言，依靠事件去驱动，然后执行对应的程序。
+        在众多事件中有一个叫鼠标单击，click。并且任何事件都会对应一个事件句柄，叫onlick，
+        事件句柄就是在事件单词钱添加一个on，事件句柄是以html标签属性存在的
+    2.  js弹出消息框
+        js中的一个对象叫window，全小写
+        window.alert(消息)
+        js中的字符串可以使用单引号也可以使用双引号
+        js中的一条语句结尾可以使用分好，也可以不用-->
+        <input type="button" value="hello" onclick="window.alert('hello js')"/>
+        <input type="button" value="hello" onclick="window.alert('hello jscode')"/>
+        <input type="button" value="hello" onclick="window.alert('hello zhangsan');
+                                                    window.alert('hello lisi')"/>
+    <!--window.可以省略-->
+        <input type="button" value="hello" onclick="alert('hello zhangsan');alert('hello lisi')"/>、
+    <!--第二种方式：样式快-->
+        <script type="text/javascripe">
+       window.alert("hello world");
+         </script>
+    <!--第三种方式:引入-->
+    <!--引入js文件遵循自上而下的执行-->
+    <!--结束标签必须有-->
+        <script type="text/javascript" src="js/JavaScript.js">
+            //这里的代码无效
+         </script>
+    </body>
+</html>

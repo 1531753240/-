@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="css.css"type="text/css">
+    <link rel="stylesheet" href="./font_q23b8dss9cq/iconfont.css"type="text/css">
+   
+</head>
+<body>
+    <div class="wrapper"></div>
+    <!--form表单的method属性中
+        git：用户信息显示在浏览器的地址栏上
+        post：用户提交信息不显示在浏览器的地址栏上
+        默认属性为git-->
+    <form action="/自学内容/index.html" method="post">
+            <div class="loginBox">
+                <div class="loginBoxCenter">
+                    <div class="inconfont icon-youxiang6 "></div>
+                        <p><label for="username">电子邮箱：</label></p>
+                         <p><input type="email"id="email"name="email"class="loginInput"
+                                autofocus="autofocus"required="required"autocomplete="off"
+                                 placeholder="请输入电子邮箱号"value=""/></p>
+                        <p><label for="password">密码：</label></p>
+                        
+                        <p><input type="password"id="password"name="password"class="loginInput"
+                                 required="required"placeholder="请输入密码"value=""/></p>
+                                 <p><a class="forgetLink" href="#">忘记密码？</a></p>
+                </div>
+           
+             <!--
+            <label>标签的作用是为鼠标用户改进了可用性，当用户点击<label>标签中的文本时，
+                浏览器就会自动将焦点转到和该标签相关联的控件上；
+             <label>标签在单选按钮和复选按钮上经常被使用，使用该标签后，
+                你点击单选按钮或复选按钮的文本也是可以选中的。
+             <label for="关联控件的id" form="所属表单id列表">文本内容</label>
+            -->
+                <div class="loginBoxBUttons">
+                    <input id="remember" type="checkbox" name="remember"/>
+                     <label for="remember">记住登录状态</label>
+                    <button class="loginBtn">登录</button>
+
+                </div>
+            </div>
+    </form>
+    
+   
+</body>
+</html>

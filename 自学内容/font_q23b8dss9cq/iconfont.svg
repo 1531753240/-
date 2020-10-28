@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="youxiang6" unicode="&#59001;" d="M573.1 617.6H177.5c-44.4 0-82.8-25.4-101.5-62.5l401.3-178.3 138 64.3c-27.8 41.9-44 92.1-44 146.2 0.1 10.2 0.7 20.3 1.8 30.3zM657 392.2L477.4 304 64 496.4v-333c0-62.7 50.8-113.5 113.5-113.5h596.1c62.7 0 113.5 50.9 113.5 113.5v164c-16.5-3.2-33.6-5-51.1-5-69 0.1-131.8 26.5-179 69.8zM689.6 626.6H960v-90.1H689.6zM779.8 718.2h90.1v-271.8h-90.1z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

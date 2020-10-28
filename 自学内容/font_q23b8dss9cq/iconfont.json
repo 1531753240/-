@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14929693",
+      "name": "邮箱 (6)",
+      "font_class": "youxiang6",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    }
+  ]
+}

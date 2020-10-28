@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function sum(a,b) {
+            alert(a+b);  
+        }
+        //函数必须调用
+        sum(10,20);
+        //定义函数sayHello
+        sayHello = function(username){
+            alert("Hello"+username);
+        }
+        //调用函数
+        sayHello("zhangsan");
+        var retVale = sum(1,2);
+        alert(retVale);
+        //两个undefined求和得NaN
+        var  retVale3=sum(1,2,3);
+        alert("结果是"+retVale3);//结果是3
+    </script>
+
+    <input type="button" value="hello" onclick="sayHello('jack');"/>    
+     <input type="button" value="10和20计算求和" onclick="sum(10,20);"/>   
+   
+</body>
+</html>
+<!--js中的函数不用指定返回值类型
+    语法格式一：function（形式参数列表）{
+        函数体;
+    }
+    语法格式二：函数名=function（形式参数列表）{
+        函数体;
+    }
+-->

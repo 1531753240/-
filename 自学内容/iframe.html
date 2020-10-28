@@ -1,0 +1,50 @@
+<!-- 通常我们使用iframe直接直接在页面嵌套iframe标签指定src就可以了。 -->
+<iframe src="demo_iframe_sandbox.htm"></iframe>
+<!-- 注：html和htm没区别 -->
+<!-- 带有额外限制的 <iframe>：-->
+<iframe src="demo_iframe_sandbox.htm" sandbox=""></iframe> 
+<!-- 如果被规定为空字符串（sandbox=""），sandbox 属性将会启用一系列对行内框架中内容的额外限制。
+sandbox 属性的值既可以是一个空字符串（应用所有的限制），也可以是空格分隔的预定义值列表（将移除特定的限制）。
+ 语法：
+<iframe sandbox="value">
+ 属性值：
+值 	                    描述
+"" 	                    启用所有限制条件
+allow-same-origin 	    允许将内容作为普通来源对待。如果未使用该关键字，嵌入的内容将被视为一个独立的源。
+allow-top-navigation 	嵌入的页面的上下文可以导航（加载）内容到顶级的浏览上下文环境（browsing context）。
+                        如果未使用该关键字，这个操作将不可用。
+allow-forms 	        允许表单提交。
+allow-scripts 	        许脚本执行。 
+ -->
+<p>您的浏览器不支持 iframes.</p>
+</iframe>
+
+<p>"提交" 按钮将提交行内框架内的表单。</p>
+<p>由于 sandbox 属性被设置为空字符串 ("")，将屏蔽对行内框架中表单的提交。</p>
+<p>如果向 sandbox 属性添加 "allow-forms"，则允许表单提交。</p>
+<p><b>注释：</b>IE 9 以及更早的版本不支持 sandbox 属性，Opera 12 以及更早的版本也不支持该属性。</p>
+<!-- 
+    iframe的属性：
+    属性 	         
+    align 	         语法：<iframe align="left|right|middle|top|bottom"> 
+    frameborder 	 语法：<iframe frameborder="1|0"> 注：1为默认，开启边框；0关闭边框
+    height 	         height
+    longdesc 	     语法：<iframe longdesc="URL"> 注：绝对 URL - 指向另一个网站（
+                                                      比如 longdesc="http://www.example.com/description.txt"）
+                                                      相对 URL - 指向网站内的一个文件
+                                                     （比如 longdesc="description.txt"）
+
+    marginheight 	 marginheight 属性规定 <iframe> 内容的顶部和底部的空白边距，以像素计。
+                     语法：<iframe marginheight="pixels">
+    marginwidth 	 marginwidth
+    name 	         name
+    scrolling 	     规定是否在 <iframe> 中显示滚动条。默认地，如果内容超出了 <iframe>，滚动条就会出现在 <iframe> 中。、
+                     语法：<iframe scrolling="auto|yes|no"> 注：auto：在需要的情况下出现滚动条（默认值）
+                                                                yes：始终显示滚动条（即使不需要）。 
+                                                                no： 从不显示滚动条（即使需要）。 
+    seamless 	     是一个布尔属性。规定 <iframe> 看起来像是包含的文档的一部分（没有边框和滚动条）
+                     语法：<iframe seamless> 在 XHTML 中，禁止属性简写，seamless 属性必须定义为 <iframe seamless="seamless">
+    src 	         规定嵌入在 <iframe> 中的文档的地址。语法：<iframe src="URL">  
+    srcdoc 	         要显示在 iframe 中的 HTML 内容。必需是有效的 HTML 语法语法：<iframe srcdoc="HTML_code"> 
+    width 	         width
+ -->

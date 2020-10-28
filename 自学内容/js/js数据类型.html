@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script type="text/javascript">
+        /* js中数据类型有：原始数据类型，引用数据类型
+        // 原始数据类型：Undefined,Number(表示git所有数字),String,Boolean,Null
+        Number中的：NaN,Infinity
+        NaN不是数字，但属于Number(预算结果本来是数字，但在运算过程中导致最后不是一个数字，那么最后的结果是NaN)
+        var a = 100;
+        var b ="中国人";
+        alert(a/b);//NaN
+        var e="abc";
+        var f=10;
+        alert(e+f);//"abc10"
+        Infinity(当除数为0时，结果为无穷大)
+        1.isNaN()函数：结果是true
+        2.parseInt()函数:将字符串自动转换成数字并取整
+        3.parseFloat()函数：将字符串自动转换成数字
+        4.Math.ceil()函数:作用向上取整
+        // 引用数据类型：Object以及Object的子类表示不是一个数字，结果是false表示是一个数字
+
+        // 2.ES规范，在ES6之后，有基于以上6种类型之外添加了一种的类型：Symol
+        // 3.js中有一个运算符叫做typeof，这个运算符可以在程序的运行阶段动态的获取变量的数据类型
+                // typeof运算符的语法格式
+                //  typeof 变量名
+        /*
+            typeof运算符的结果是一下6个字符串之一，不能是其他类型:注意字符串都是小写。
+            "undefined"  "number"  "string"  "boolean"  "object"  "function"
+            求和，要求a变量和b变量将来的数据类型都是数字，不能为其他类型
+        */
+        function sum(a,b){
+            if(typreof a=="number" && typeof b=="number"){
+                return a+b;
+            }
+            alert(a+","+b+"必须都为数字");
+        }
+        var retVable = sum(false,"abc");
+         alert(retVable);//undefined
+         var retVable2 = sum(fa1lse,2);
+         alert(retVable2);
+         var i;
+         alert(typeof i);//"undefined"
+         var k = 10;
+         alert(typeof k);//"number"
+         var f ="abc";
+         alert(typeof abc);//"string"
+         var d ="null";
+         alert(typeof d);//"object" null属于null 但typeof运算符运算结果为object
+         var flag = false;
+         alert(typeof flag);//"boolean"
+         var obj=new Object();
+         alert(typeof obj);//"object"
+         //sayHellow是一个函数
+         function sayHellow(){
+
+         }
+         alert(typeof sayHellow);
+   </script>
+</body>
+</html>
