@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.red{
+
+        }
+        /* 交集选择器
+            作用：选中同时复合多个条件的元素
+            语法：选择器1选择器2选择器3.。。。。
+            注意点：如果有元素选择器，必须使用元素选择器开头
+            也可以div#box1不过id是独一的不用麻烦  */
+        h1,span{
+
+        }
+        /* 选择器分组（并集选择器）
+        作用：同时选中多的元素所列的元素都会选中
+            ，相当于或 */
+        /* 子元素选择器 */
+        div>span{
+            
+        }
+        /* 后代元素选择器 */
+        div p{
+
+        }
+        p+span{
+            /* 选择p标签后面的span   */
+        }
+        p~span{
+            /* 选择下边所有的兄弟元素 */
+            color: red;
+        }
+        p[title]{
+            /* [属性名]：选择含有指定属性的元素 */
+        }
+        p[title=abc]{
+            /* 选择指定元素为abc的元素 */
+        }
+        p[title^=abc]{
+            /* 选择属性值以指定元素开头的元素，即以abc开头的元素 */
+        }
+        P[title$=abc]{
+            /* 以abc结尾 */
+        }
+        p[title*=abc]{
+            /* 有就行，任意位置 */
+        }
+        /* 伪类 ：first-child  选中第一个
+                ：laast-child  选中最后一个
+                ：nth-child 选中第n个
+                特殊值 2n或even  选中偶数
+                        2n+1 或odd 表示选中奇数
+                ：first-of-type在同类型中进行排序 */
+        ul > :first-child{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+            父元素：
+            子元素
+            祖先元素
+            后代元素
+     -->
+    <div>
+        <p>我是div中的p元素
+            <span>我是p元素中的span元素</span>
+        </p>
+            <span>我是div中的span元素</span>
+            <span>我是div中的span元素</span>
+            <span>我是div中的span元素</span>
+            <span>我是div中的span元素</span>
+            <span>我是div中的span元素</span>
+    </div>
+    <p title="abc">123</p>
+    <!-- tltle标签名 -->
+    <p title="efg">456</p>
+    <ul>
+        <li>第一个</li>
+        <li>第二个</li>
+        <li>第三个</li>
+        <li>第四个</li>
+        <li></li>
+    </ul>
+   
+</body>
+</html>
