@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box1{
+        #main{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        #main:hover{
             width: 400px;
             height: 400px;
-            border-radius: 100%;
-            background-color: red;
-           
+            transition: all 5s linear 3s;
+            background-color:yellowgreen;
+
         }
     </style>
 </head>
 <body>
-    <div class="box1"></div>
+    <div id="main"></div>
 </body>
 </html>

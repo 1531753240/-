@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- :link表示没有访问过的链接(正常链接) -->
+    <style>
+        a:link{
+            color: red;
+        }
+        a:visited{
+            /* 访问过的链接，只能修改颜色 */
+            color: salmon;
+        }
+        a:hover{
+            /* 表示鼠标移入 */
+            color: yellow;
+        }
+        a:active{
+            /* 表示点击的 */
+            color: springgreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">百度</a>
+    <br>
+    <a href="https://www.baidu123.com">百度123</a>
+
+</body>
+</html>
