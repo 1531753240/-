@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = 123;
+        // 在js中，如果需要表示16进制的数字，则需要以0x开头
+        // 表示八进制数，以0开头
+        // 表示二进制，以0b开头
+        a = 0x10;
+        console.log(a);
+        // 像"070"这种字符串，有些浏览器会当成8进制解析，而有些则当成10进制解析
+        a = "070";
+        // 可以在parseInt()中传递一个第二个参数，来指定数字的进制
+        a = parseInt(a,10);
+        console.log(typeof a);
+        // typeof运算符的返回类型为字符串
+    //     console.log(typeof a);    //'undefined'
+
+    //     console.log(typeof(true));  //'boolean'
+
+    //     console.log(typeof '123');  //'string'
+
+    //     console.log(typeof 123);   //'number'
+
+    //     console.log(typeof NaN);   //'number'
+
+    //     console.log(typeof null);  //'object'    
+
+    //     var obj = new String();
+
+    //     console.log(typeof(obj));    //'object'
+
+    //     var  fn = function(){};
+
+    //     console.log(typeof(fn));  //'function'
+
+    //     console.log(typeof(class c{}));  //'function'
+
+
+    //         console.log(a);
+    // 调用Boolean()函数将装换为布尔值,
+    // -数字-->  除了0和NaN，其他都是true
+    // -字符串-->  除了空串其他都是true
+    // null和undefined都会转换为false
+    a = Boolean();
+    console.log(typeof a);
+    console.log(a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
