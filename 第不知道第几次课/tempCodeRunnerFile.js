@@ -1,20 +1,10 @@
-  function Haw(name,price,origin) {
-    this.name = name;
-    this.price = price;
-    this.origin = origin;
-    this.printName = function () {
-        console.log("this is Haw")
-    }
+function Object2(){
+    this.__proto2__ = Object2.prototype2;
+}
+Object2.age = 20;
+Object2.prototype2 = {
+    __proto2__: null
 }
 
-
-Haw.prototype.printPrice = function () {
-    console.log("prototype print Price")
-}
-
-
-
-// Haw()
-var h1 = new Haw("山楂",2,"河南省");
-
-console.log(h1._proro_);
+let obj1 = new Object2()
+console.log(obj1.__proto2__.__proto2__)
